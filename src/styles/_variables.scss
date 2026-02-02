@@ -1,0 +1,31 @@
+// צבעי בסיס
+$color-white: #ffffff;
+$color-black: #000000;
+$color-background: #F9FAFB;
+$color-background-section-1: #E0F7F1; // טורקיז בהיר
+$color-background-section-2: $color-white; // לבן
+$color-background-header: #d0d0d0; // רקע בהיר ל־Header
+$color-text-main: #1F2937;
+$color-text-secondary: #4B5563;
+$color-accent: #14B8A6;
+$color-accent-dark: #0D9488;
+
+$primary-color: #1abc9c; // טורקיז – צבע ראשי
+$text-color: #1a1a1a; // שחור כהה – טקסט עיקרי
+$link-color: #3498db; // כחול – צבע קישורים
+
+// טיפוגרפיה
+$font-size-title: 2.5rem;
+$font-size-subtitle: 1.2rem;
+$font-size-body: 1rem;
+
+// רווחים
+$spacing-xs: 0.5rem;
+$spacing-sm: 1rem;
+$spacing-md: 2rem;
+$spacing-lg: 4rem;
+
+// מעגלים / גבולות
+$radius-sm: 4px;
+$radius-md: 12px;
+$radius-lg: 50%;

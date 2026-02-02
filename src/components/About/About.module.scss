@@ -1,0 +1,33 @@
+@import '../../styles/variables.scss';
+
+.about{
+    width: 650px;
+    // margin: 0 auto;
+    position: absolute;
+    bottom: -50vh;
+    left: 50%; // Move the element to the center horizontally
+    transform: translateX(-50%); // Adjust to center horizontally
+    padding: 50px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box; // Ensure padding is included in the width
+    
+    @media (max-width: 768px) {
+        width: 100%;
+        position: relative;
+        bottom: 0;
+        left:0;
+        transform: none;
+        padding: 30px;
+    }
+
+    h2{
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+    p{
+        margin-bottom: 40px;
+    }
+}

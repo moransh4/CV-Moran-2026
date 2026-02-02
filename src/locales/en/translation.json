@@ -1,0 +1,22 @@
+{
+ "hero": {
+    "title": "Hi, I'm Moran!",
+    "subtitle": "I'm a web developer passionate about clean code and beautiful UI.",
+    "cta": "View my projects",
+    "cv-button": "Download resume"
+  },
+  "about": {
+    "title": "About Me",
+    "description": "I’m a developer with strong analytical thinking and a clear system level perspective. I enjoy diving into complex problems, understanding how things connect, and delivering clean, reliable solutions. I work well in dynamic environments, collaborate naturally with others, and take ownership of the work I deliver.",
+    "description1": "I’m a Full Stack Developer specializing in both front-end and back-end development. I build modern, responsive web applications with a focus on clean code, high performance, and great user experience.",
+    "description2": "I love building beautiful, intuitive user interfaces, and creating seamless user experiences. I believe in clean code and good practices, and I'm always looking for ways to improve my skills and learn new technologies."
+  },
+  "skills": {
+    "title": "Skills"
+  },
+  "experience": {
+    "title": "Experience"
+  },
+  "contact": "Contact"
+  }
+  
