@@ -5,6 +5,10 @@
   background: $color-background;
   min-height: 100vh;
   color: $color-text-main;
+  
+  @media (max-width: 768px) {
+    padding: $spacing-md $spacing-sm;
+  }
 }
 
 .timeline {
@@ -36,27 +40,21 @@
 
   @media (max-width: 768px) {
     &::before {
-      left: 0;
-      right: auto;
+      // left: 0;
+      // right: auto;
+      display: none;
     }
 
     &[data-dir='rtl']::before {
-      left: 0;
-      right: auto;
+      // left: 0;
+      // right: auto;
+      display: none;
     }
   }
 }
 
 .timelineItem {
 
-  @media (max-width: 768px) {
-    flex-direction: row !important;
-    gap: $spacing-sm;
-
-    [data-dir='rtl'] & {
-      flex-direction: row !important;
-    }
-  }
   position: relative;
   margin-bottom: $spacing-lg;
   display: flex;
@@ -69,6 +67,15 @@
   [data-dir='rtl'] & {
     flex-direction: row-reverse;
   }
+
+    @media (max-width: 768px) {
+    flex-direction: row !important;
+    gap: $spacing-sm;
+
+    [data-dir='rtl'] & {
+      flex-direction: row !important;
+    }
+  }
 }
 
 .timelineDot {
@@ -79,17 +86,20 @@
   border-radius: $radius-lg;
 
   @media (max-width: 768px) {
-    width: 40px;
-    height: 40px;
-    border-width: 3px;
-    margin-top: $spacing-xs;
-    order: 0 !important;
+    // width: 40px;
+    // height: 40px;
+    // border-width: 3px;
+    // margin-top: $spacing-xs;
+    // order: 0 !important;
+    display: none;
   }
   background: $color-white;
   border: 4px solid $color-accent;
   margin-top: $spacing-sm;
   z-index: 2;
   box-shadow: 0 0 0 4px $color-background-section-1;
+  position: relative;
+  left: 5px;
 
   [data-dir='rtl'] & {
     order: 1;
@@ -178,7 +188,7 @@
   font-weight: 600;
 
   @media (max-width: 768px) {
-    width: 100%;
+    // width: 100%;
     justify-content: space-between;
   }
 }
