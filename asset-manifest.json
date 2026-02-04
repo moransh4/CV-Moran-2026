@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/CV-Moran-2026/static/css/main.50dc8a17.css",
-    "main.js": "/CV-Moran-2026/static/js/main.a1a20cbc.js",
+    "main.css": "/CV-Moran-2026/static/css/main.78fee490.css",
+    "main.js": "/CV-Moran-2026/static/js/main.ecc391d3.js",
     "static/js/796.3525dd6c.chunk.js": "/CV-Moran-2026/static/js/796.3525dd6c.chunk.js",
     "static/js/165.11f28ca1.chunk.js": "/CV-Moran-2026/static/js/165.11f28ca1.chunk.js",
     "static/js/453.2a82e7ac.chunk.js": "/CV-Moran-2026/static/js/453.2a82e7ac.chunk.js",
     "static/media/me1.jpg": "/CV-Moran-2026/static/media/me1.8d0be9ba6108406374bb.jpg",
     "index.html": "/CV-Moran-2026/index.html",
-    "main.50dc8a17.css.map": "/CV-Moran-2026/static/css/main.50dc8a17.css.map",
-    "main.a1a20cbc.js.map": "/CV-Moran-2026/static/js/main.a1a20cbc.js.map",
+    "main.78fee490.css.map": "/CV-Moran-2026/static/css/main.78fee490.css.map",
+    "main.ecc391d3.js.map": "/CV-Moran-2026/static/js/main.ecc391d3.js.map",
     "796.3525dd6c.chunk.js.map": "/CV-Moran-2026/static/js/796.3525dd6c.chunk.js.map",
     "165.11f28ca1.chunk.js.map": "/CV-Moran-2026/static/js/165.11f28ca1.chunk.js.map",
     "453.2a82e7ac.chunk.js.map": "/CV-Moran-2026/static/js/453.2a82e7ac.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.50dc8a17.css",
-    "static/js/main.a1a20cbc.js"
+    "static/css/main.78fee490.css",
+    "static/js/main.ecc391d3.js"
   ]
 }
