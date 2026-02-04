@@ -24,7 +24,9 @@
         flex-wrap: wrap;
 
         .skillBox{
-            width: 100px;
+            width: fit-content;
+            max-width: 100%;
+            min-width: 100px;
             background-color: white;
             padding: 15px;
             border-radius: 5px;
@@ -47,6 +49,8 @@
                 font-size: 1.2rem;
                 font-weight: bold;
                 text-align: center;
+                                white-space: normal;
+                                overflow-wrap: anywhere;
               }
         }
     }
