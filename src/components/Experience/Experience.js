@@ -14,7 +14,7 @@ const Experience = () => {
     const fetchExperiences = async () => {
       try {
         console.log('🔄 Fetching experiences from Sanity...');
-        const query = `*[_type == "experience"] | order(startDate desc) {
+        const query = `*[_type == "experience"] | order(endDate desc){
           _id,
           position,
           company,
@@ -37,45 +37,6 @@ const Experience = () => {
 
     fetchExperiences();
   }, []);
-
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.2,
-        delayChildren: 0.3,
-      },
-    },
-  };
-
-  const itemVariants = {
-    hidden: { 
-      opacity: 0, 
-      x: i18n.language === 'he' ? 50 : -50,
-      y: 20 
-    },
-    visible: {
-      opacity: 1,
-      x: 0,
-      y: 0,
-      transition: {
-        duration: 0.6,
-        ease: 'easeOut',
-      },
-    },
-  };
-
-  const timelineVariants = {
-    hidden: { scaleY: 0 },
-    visible: {
-      scaleY: 1,
-      transition: {
-        duration: 0.8,
-        ease: 'easeInOut',
-      },
-    },
-  };
 
   const getLanguageField = (obj) => {
     if (!obj) return '';
@@ -203,12 +164,16 @@ const Experience = () => {
 
                 <div className={styles.dateRange}>
                   <span className={styles.year}>{exp.startDate}</span>
-                  <span className={styles.separator}>—</span>
                   <span className={styles.year}>
                     {exp.currentlyWorking ? (
+                      <>
+                      <span className={styles.separator}> — </span> 
                       <span className={styles.current}>Present</span>
+                      </>
                     ) : (
-                      exp.endDate || 'N/A'
+                      exp.endDate != null && exp.endDate !== exp.startDate ?
+                      <><span className={styles.separator}> — </span>{exp.endDate}</> 
+                      : null
                     )}
                   </span>
                 </div>
